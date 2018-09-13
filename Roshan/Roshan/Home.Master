@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="~/Home.Master.cs" Inherits="Roshan.Home" %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+     <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <!-- CSS -->        
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+         <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/et-line.css" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Carousel CSS -->
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style type="text/css">
+        .nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar {min-height:20px !important}
+ .modal .modal-dialog {
+    z-index: 10051;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important; }
+    </style>
+
+      <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+                       <form runat="server" id="myform">
+
+       <!--=================== side menu ====================-->
+        <nav class="navbar navbar-inverse navbar-expand-lg navbar-expand-sm ">
+            <div class="container">
+				<div class="navbar-header">
+            <!--logo -->
+            <div class="logo_box">
+                <a href="#">
+                    <img src="assets/img/Logo-1.4.png" alt="cocoon">
+                </a>
+            </div>
+            </div>
+            <!--logo end-->
+
+                <div style="display:none" runat="server" id="user_block">
+                
+                <div class="col-lg-3 col-sm-6 align-content-center">
+
+                    
+                    <span class="desc" id="username" runat="server" style="font-size:10px; left:0"></span>
+              <%--<a runat="server"  class="btn btn-primary" onserverclick="logout">Logout</a>--%>
+
+
+                    <asp:LinkButton  ID="Logout" runat="server" CausesValidation="False" onClick="logout" style="text-align: right">logout</asp:LinkButton>
+                    
+                     </div>
+         
+                 </div>
+
+
+            <!--main menu -->
+
+                <ul class="nav">
+             <li id="home1" runat="server">
+                        <a href="index.aspx">
+                            Home
+                        </a>
+                    </li>
+                    <li id="Li1" runat="server"> 
+                        <a data-toggle="modal" data-target=".bd-example-modal-lg">
+                            Client Login
+                        </a>
+                    </li>
+
+                    <li id="blog1" runat="server">
+                        <a href="Videos.aspx">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li id="contacts1" runat="server"> 
+                        <a href="contact.aspx">
+                            Contact
+                        </a>
+                    </li>
+                    <li id="services1" runat="server" style="display:none">
+                        <a href="services.aspx">
+                            Services
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li id="join" runat="server"> 
+                        <a href="Join_us.aspx">
+                            Join Us
+                        </a>
+                    </li>
+                    <li id="adminp" runat="server" style="display:none"> 
+                        <a href="admin_panel.aspx">
+                            Admin Panel
+                        </a>
+                    </li>             
+
+                </ul>
+            </div>
+            <!--main menu end -->
+            
+        </nav>
+        
+    
+
+                       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+
+                       </asp:ContentPlaceHolder>
+                        
+      
+     <div class="footer-copyright" style="background-color:black;">
+         <p style="font-weight:500">
+             Developed by ECLECTIC BINARIES
+         </p>
+      </div>
+     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" style="display:none" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-header">
+                                Login
+                            </div>
+                            
+                        
+                        <div class="modal-content">
+                              <label for="inputEmail" >Email address</label>
+        <input runat="server" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+        <label for="inputPassword" >Password</label>
+        <input runat="server" type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+       <asp:button runat='server' class="btn btn-lg btn-primary btn-block" type="submit" Text="Sign In" OnClick="Unnamed1_Click" UseSubmitBehavior="false"></asp:button>
+                        </div>
+                    </div>
+                            </div>
+
+                        </div>
+                           </form>
+    
+<!-- jquery -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<!--slick carousel -->
+<script src="assets/js/slick.min.js"></script>
+<!--Portfolio Filter-->
+<script src="assets/js/imgloaded.js"></script>
+<script src="assets/js/isotope.js"></script>
+<!-- Magnific-popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!--Counter-->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!-- WOW JS -->
+<script src="assets/js/wow.min.js"></script>
+<!-- Custom js -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

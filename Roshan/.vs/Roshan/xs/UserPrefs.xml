@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{2749A94D-0368-476E-B853-4FB5C9C34F5D}|">
+  <MonoDevelop.Ide.ItemProperties.Roshan PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../../../Library/Frameworks/Mono.framework/Versions/5.10.1/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets">
+    <Files>
+      <File FileName="Roshan/about-us.aspx" Line="1" Column="1" />
+      <File FileName="Roshan/index.aspx" Line="17" Column="44" />
+      <File FileName="../../../../../../../../Library/Frameworks/Mono.framework/Versions/5.10.1/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="2067" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
